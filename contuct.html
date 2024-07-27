@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .social-icons {
+    display: flex;
+    align-items: center; /* توسيط الأيقونات أفقياً */
+}
+
+.social-icon {
+    font-size: 24px; /* حجم الأيقونات */
+    color: #ffc107; /* اللون الأصفر */
+    margin: 10px 0; /* مساحة بين الأيقونات */
+    transition: color 0.3s; /* تأثير التحويل عند التمرير */
+}
+
+.social-icon:hover {
+    color: #e0a800; /* اللون الأصفر الداكن عند التمرير */
+}
+
+        .info-section,
+        .form-section {
+            border: 2px solid #ffc107; /* Yellow border */
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .section-container {
+            padding: 10px; /* General padding for the whole section */
+        }
+
+        .info-section ul,
+        .form-section .form-group {
+            margin: 10px 0;
+        }
+
+        .info-section li:nth-child(odd),
+        .form-section .form-group:nth-child(odd) {
+            background-color: #f8f9fa; /* Light gray */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .info-section li:nth-child(even),
+        .form-section .form-group:nth-child(even) {
+            background-color: #e9ecef; /* Slightly darker gray */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .info-section li:hover,
+        .form-section .form-group:hover {
+            background-color: #ffc107; /* Yellow on hover */
+            color: #fff; /* White text on hover */
+        }
+
+        .embed-responsive {
+            border: 2px solid #ffc107; /* Yellow border */
+            border-radius: 5px;
+        }
+
+        .btn-primary,
+        .btn-warning {
+            background-color: #ffc107; /* Yellow button */
+            border: none;
+        }
+
+        .btn-primary:hover,
+        .btn-warning:hover {
+            background-color: #e0a800; /* Darker yellow on hover */
+        }
+    </style>
+</head>
+
+<body dir="rtl"> <!-- Set text direction to right-to-left for Arabic layout -->
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img style="width: 50px; height: 60px;" src="shipping_2696054 (1).png" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">الصفحة الرئيسية <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">من نحن</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            صفحات
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">صفحة 1</a>
+                            <a class="dropdown-item" href="#">صفحة 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">صفحة 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">مدونة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="section home mt-5">
+        <div class="container">
+            <div class="home-item text-center">
+                <h2>لا تترد بالستشارة</h2>
+                <p class="my-4">
+                    نسعى لتحقيق أحلام عملائنا، من خلال الجمع بين أفكارهم وأسلوب حياتهم وميزانيتهم وتجربتنا الخاصة.
+                </p>
+                <button class="btn btn-warning">اطلب اقتباس</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-12">
+                    <div class="about__item">
+                        <h2 class="section__title">مشاريعنا</h2>
+                        <p>
+                            ونحن نسعى لتحقيق أحلام عملائنا، من خلال الجمع بين أفكارهم، ونمط الحياة، والميزانية مع تجربتنا الخاصة، والخبرة، وأفضل الممارسات لإنشاء البيت الذي هو ممتع، عملي ومستدام وذات قيمة دائمة.
+                        </p>
+                        <button class="btn btn-warning">عرض جميع المشاريع</button>
+                    </div>
+                </div>
+                <div class="col-md-7 col-12">
+                    <div class="about__img">
+                        <img src="project-slide1.jpg" alt="" class="w-100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information and Form Section -->
+    <section  class="container mt-5">
+        <div class="row">
+            <!-- Contact Information Section -->
+            <div class="col-md-6 info-section">
+                <h2 class="text-center">معلومات الاتصال</h2>
+                <ul>
+                    <li><strong>العنوان:</strong> الجاردينز  </li>
+                    <li><strong>رقم الهاتف:</strong> 9620780838749</li>
+                    <li><strong>الفاكس:</strong> 0780838649</li>
+                    <li><strong>ساعات العمل:</strong> من الأحد إلى الخميس، من 9 صباحًا إلى 5 مساءً</li>
+                    <li><strong>البريد الإلكتروني:</strong>tahakhatip@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="col-md-6 form-section">
+                <h2 class="text-center">تواصل معنا</h2>
+                <form action="mailto:tahakhatip@gmail.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">الاسم</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="أدخل اسمك" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">رسالة</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="أدخل رسالتك" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning">إرسال</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="container mt-5">
+        <h2 class="text-center">موقع الشركة</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.392912029084!2d-122.4168376846824!3d37.7749292797597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064fda9bc6b%3A0x4a12e2b3a9991a1e!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1609879334745!5m2!1sen!2sus" 
+                class="embed-responsive-item" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+          
+    <section class="subscribe">
+        <div class="subscribe__item">
+            <h2>اشترك في نشرتنا الإخبارية</h2>
+            <p class="my-4">
+                الاشتراك في النشرة الإخبارية الاشتراك ويكون أول من يعرف عن أحدث أخبار الشركة والعروض الخاصة والخصومات. والعروض الخاصة والخصومات.
+            </p>
+            <div class="form">
+                <input type="text" class="form-control" placeholder="اشترك معنا" />
+                <button class="btn btn-warning">اشترك الان</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <hr style="border: solid rgb(248, 204, 9);">
+    <!-- Footer -->
+    <footer class="section mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="footer_item">
+                        <h3>
+                            <img style="width: 70px; height: 70px;" src="shipping_2696054 (1).png" alt="" />
+                        </h3>
+                        <p>نحن مستعدون لمساعدتك دائما.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <h4>تواصل معنا</h4>
+                    <div class="social-icons text-center">
+                        <a href="https://facebook.com" target="_blank" title="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank" title="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank" title="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" title="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-3 col-sm-6 col-12">
+                    <h4>المشاركات الأخيرة</h4>
+                    <div class="footer-left border-bottom mb-2 pb-2">
+                        <img src="news-thumb-1.jpg" alt="" />
+                        <p>البناء التطبيقات مساعدة المشرفين على البناء سحب السلامة أولا</p>
+                    </div>
+                    <div class="footer-left border-bottom mb-2 pb-2">
+                        <img src="news-thumb-1.jpg" alt="" />
+                        <p>البناء التطبيقات مساعدة المشرفين على البناء سحب السلامة أولا</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12"></div>
+            </div>
+            <p style="display: flex; justify-content: center; color: rgb(230, 230, 15);">&copy; 2024 All rights reserved by Taha Alkhateeb, Web Developer |<hr> Phone: +962 780 838 749 | Amman, Jordan</p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
